@@ -1,0 +1,76 @@
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none !important;
+}
+.btn {
+    background-color: #f25f3a !important;
+}
+.landing .container .col h1 {
+    font-size: 60px;
+}
+.landing .container .col img:last-child {
+    left: 200px;
+    bottom: 25px;
+    z-index: -1;
+}
+.about .container {
+    gap: 80px;
+}
+.about .container .col h2 {
+    font-size: 40px;
+}
+.about .container .col p {
+    color: #aaa;
+}
+.about .container .col img {
+    z-index: -1;
+    right: 500px;
+}
+.about .container .col .box::after {
+    content: "01";
+    position: absolute;
+    left: -60px;
+    top: 0;
+    padding: 7px 15px;
+    background-color: #f25f3a;
+    border-radius: 20px;
+    color: #fff;
+}
+@media(max-width: 992px) {
+    .about .container .col .box::after {
+        left: -10px;
+        z-index: 10;
+    }
+    .about .container .col .box h5 {
+        background-color: #e8bcb05c;
+        padding: 7px 0;
+    }
+} 
+@media(max-width: 768px) {
+    .about .container .col .box::after {
+        display: none;
+    }
+} 
+.testimonials .testi .boxes {
+    gap: 20px;
+}
+.testimonials .testi .boxes .box {
+    background-color: #cccccc2b;
+}
+.testimonials .testi .boxes .box img {
+    width: 100px;
+}
+.testimonials .testi .boxes .box p {
+    color: #aaa;
+}
+.bar {
+    background-color: #f25f3a;
+}
+.bar .container .btn {
+    background-color: #e8bcb0 !important;
+}
+.filter-white {
+    filter: invert(91%) sepia(100%) saturate(0%) hue-rotate(205deg) brightness(105%) contrast(101%);
+}
